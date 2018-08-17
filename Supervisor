@@ -1,0 +1,13 @@
+1. Install Supervisor
+   Download Supervisor and install with python.
+       python setup.py install
+2. Config
+   Build config at /etc/supervisor/conf.d
+   sudo supervisord -c /etc/supervisor/conf.d/PersonalBlog.conf
+   sudo supervisorctl -c /etc/supervisor/conf.d/PersonalBlog.conf
+   sudo supervisorctl reload
+   sudo supervisorctl start PersonalBlog
+   sudo supervisorctl status
+3. check process and kill
+    ps aux | grep supervisord
+    sudo kill -s SIGTERM number
