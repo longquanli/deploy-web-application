@@ -1,0 +1,10 @@
+1. Register a account.
+2. Create a EC2 instance.
+3. Get a ssh key and its .pem file.
+4. Edit security group. Add port 22 and port 80.
+5. Use Putty to load .pem file and transfer it into secret type. Then config Putty. 'ubuntu@'+public DNS.
+6. Load and config WinSCP
+
+Reference:
+Putty link: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+WinSCP link: https://winscp.net/eng/download.php
