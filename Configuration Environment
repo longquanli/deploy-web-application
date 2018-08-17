@@ -1,0 +1,18 @@
+1. Use PutTTY to connect remote server.
+2. sudo apt-get update.
+   sudo apt-get install python3.6
+3. Config python
+   update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
+   update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 2
+   update-alternatives --config python3
+4. Config pip
+   apt-get install python3-pip　　　　# Python3
+   apt-get install python-pip　　　　  # Python2
+5. Install Nginx, Supervisor, Mysql
+   sudo apt-get install nginx supervisor mysql-server
+6. Edit mysql(utf-8)
+   vim /etc/mysql/my.cnf
+7. run mysql
+   mysql -u root -p
+8. Install python lib: jinja2, aiomysql, aiohttp, request
+   sudo pip3 install jinja2 aiomysql aiohttp request
