@@ -1,0 +1,17 @@
+1. Install Fabric. A platform helps deploy app automatically.
+   sudo pip3 install fabric3
+2. Edit fabric config file
+   Zip automatically: build()
+       fab build
+   deploy automatically: upload to promote server; unzip; reset www soft link; root related function.
+3. Config Supervisor
+   more details see ./Supervisor
+4. Config Nginx.
+   Create .conf file at /etc/nginx/sites-available/
+   Build soft link at /etc/nginx/sites-enabled/
+       sudo ln -s /etc/nginx/sites-available/PersonalBlog.conf
+   Reload
+       sudo /etc/init.d/nginx reload
+
+Reference:
+https://www.zybuluo.com/phper/note/89391
